@@ -73,3 +73,7 @@ This repository contains both the backend (Go) and frontend (React) applications
 
 - Make sure the backend is running before using the frontend, as the frontend will make API requests to it.
 - You can use the provided Postman collection (`backend/docs/postman_collection.json`) to test the backend API endpoints.
+
+## Demo
+
+![demo article post](./frontend/docs/articles-post.gif)
