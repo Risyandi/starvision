@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { X } from 'lucide-react';
 import Modal from './Modal';
 
 const PostForm = ({ isOpen, onClose, onSubmit, loading, editingPost = null }) => {

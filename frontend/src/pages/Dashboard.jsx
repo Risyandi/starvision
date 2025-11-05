@@ -25,7 +25,7 @@ const Dashboard = () => {
     trash: 0,
   });
 
-  const { loading, error, data, execute } = useApi();
+  const { loading, data, execute } = useApi();
   const {
     loading: submitLoading,
     error: submitError,
@@ -36,11 +36,13 @@ const Dashboard = () => {
   // Fetch posts on tab or page change
   useEffect(() => {
     fetchPosts();
+    // eslint-disable-next-line
   }, [activeTab, currentPage]);
 
   // Fetch statistics on mount
   useEffect(() => {
     fetchStatistics();
+    // eslint-disable-next-line
   }, []);
 
   const fetchPosts = async () => {

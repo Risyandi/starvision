@@ -1,5 +1,4 @@
 import { useState, useCallback } from 'react';
-import { postsAPI } from '../services/api';
 
 export const useApi = () => {
   const [loading, setLoading] = useState(false);
