@@ -1,0 +1,91 @@
+{
+  "info": {
+    "name": "Starvision Backend API",
+    "description": "Postman collection for testing Starvision backend API endpoints.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Post",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Sample Title\",\n  \"content\": \"Sample content with at least 20 characters.\",\n  \"category\": \"General\",\n  \"status\": \"publish\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/posts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["posts"]
+        }
+      }
+    },
+    {
+      "name": "Get Single Post",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/posts/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["posts", "1"]
+        }
+      }
+    },
+    {
+      "name": "Get All Posts (Paginated)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/articles/10/0",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["articles", "10", "0"]
+        }
+      }
+    },
+    {
+      "name": "Update Post",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Title\",\n  \"content\": \"Updated content with at least 20 characters.\",\n  \"category\": \"General\",\n  \"status\": \"draft\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/posts/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["posts", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete Post",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/posts/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["posts", "1"]
+        }
+      }
+    }
+  ]
+}
