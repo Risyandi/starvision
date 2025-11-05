@@ -72,8 +72,8 @@ This repository contains both the backend (Go) and frontend (React) applications
 ## Additional Notes
 
 - Make sure the backend is running before using the frontend, as the frontend will make API requests to it.
-- You can use the sql for import table for the database on this folder `backend/docs/posts_db.sql`
-- You can use the provided Postman collection on this folder `backend/docs/collection.json` on check this [Link]('./backend/docs/collection.json') to test the backend API endpoints.
+- You can use the sql for import table for the database on this folder `backend/docs/posts_db.sql` or on check this [Link](backend/docs/posts_db.sql)
+- You can use the provided Postman collection on this folder `backend/docs/collection.json` or on check this [Link](backend/docs/collection.json) to test the backend API endpoints.
 
 ## Demo
 
